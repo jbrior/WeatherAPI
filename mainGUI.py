@@ -26,7 +26,7 @@ def get_weather(city):
         return None
 
 def show_weather(x=False):
-    city = entry_city.get() if not x else randint(10000,99999)
+    city = entry_city.get() if not x else randint(10_000,99_999)
     weather = get_weather(city)
     if weather:
         weather_info.config(text=f"{weather['city_name']}, {weather['state']}\n"
